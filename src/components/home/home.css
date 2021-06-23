@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@150,200;1,400&display=swap');
+*{
+  font-family: 'Raleway', sans-serif;
+  
+
+}
+.section-a{
+  overflow:hidden;
+}
+.section-a-img{
+  width:86rem;
+  height:38rem;
+  filter: blur(1px);
+  -webkit-filter: blur(1px); 
+}
+.section-b{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  width:100%;
+}
+.b-left-div{
+  width:50%
+}
+
+.b-img-one img{
+  height:28rem;
+}
+.b-img-two img{
+ height:12rem;
+ margin-top: 130%;
+ margin-left: 130%;
+}
+.b-img-two{
+  position:absolute;
+  display: inline-block;
+}
+.b-img{
+ display:flex;
+}
+.b-right-div{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  width:40%;
+  margin-left: 2.5rem;
+
+}
+.right-feature-header{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+}
+.right-feature{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.right-header h2{
+ text-align: start;
+ margin-top: 0;
+ font-weight: 400px;
+ font-size:30px;
+}
+.right-description p{
+  text-align:start;
+}
+.section-A{
+  display: flex;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  flex-direction: column;
+;
+  width: 40%;
+}
+.feature-des p{
+  margin:0;
+  font-size:12px;
+}
+.b-btn{
+  margin-top: 3rem;
+  margin-left: 0.2rem;
+  width: 20%;
+  height:2.5rem;
+  background-color: #C4C953;
+  border: none;
+  color: #fff;
+  font-weight: 300;
+}
+.feature-heading{
+  margin-left: 1rem ;
+}
+.overlay{
+  display:flex;
+  position: absolute;
+  top:15rem;
+  left: 13rem;
+  color:#fff;
+  font-size:10px;
+  font-weight: 500;
+
+}
+.overlay p{
+font-weight: 500;
+font-size: 5rem;
+margin: 0;
+color: #262B2B;
+vertical-align:middle;
+  
+}
+.overlay img{
+  height:10rem;
+  width:3rem;
+}
+.img-two{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.section-c{
+  display: flex;
+  justify-content: center;
+  background-color:#262B2B;
+  color:#fff;
+}
+.c-head-one{
+  font-size:2.6rem;
+  color:#ffffff;
+  font-weight: 400;
+  margin:0;
+}
+.c-head-two{
+  font-size:2.0rem;
+  color:#ffffff;
+  font-weight: 400;
+  margin:0;
+  margin-top:1rem;
+}
+.service-card{
+  width:17%;
+  height:40%;
+  border-radius: 7px;
+  overflow:hidden;
+  box-shadow: 0px 0px 11px 5px #3a4141 ;
+}
+.service-img{
+  height: 10rem;
+  width:15rem;
+}
+.card-head{
+  color:#C4C953;
+  font-size:1.2rem;  
+}
+
+.c-middle{
+  margin-top: 3rem;
+  width:100%;
+ display: flex;
+ justify-content: space-evenly;
+
+}
