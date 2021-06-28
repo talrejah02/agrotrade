@@ -4,6 +4,8 @@ import { FiMail } from "react-icons/fi";
 import { FaRegAddressCard, FaCity } from "react-icons/fa";
 import  leave from "../../Assets/Sell/cart.jpg"
 import "../buy/buy.css";
+import { Link } from "react-router-dom";
+
 function Register() {
 
 
@@ -78,7 +80,7 @@ function Register() {
             <input type="text" />
           </div>
           <div className="">
-            <button className="card-btn" type="button"  >Proceed</button> <br/>
+            <Link to="/" className="card-btn" type="button"  >Proceed</Link> <br/>
           </div>
           {/* </div> */}
         </div>
