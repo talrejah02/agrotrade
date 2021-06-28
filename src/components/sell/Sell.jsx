@@ -42,6 +42,7 @@ function Sell() {
       .then((response) => {
         console.log(response);
       })
+      .then(alert("product uploaded"))
       .catch((error) => {
         console.log(error);
       });
@@ -153,7 +154,7 @@ function Sell() {
               onChange={(e) =>
                 setproduct({ ...products, quantity: e.target.value })
               }
-            />
+            /><span>/q</span>
           </div>
           <div className="sell-input">
             <label for="price">Enter price</label>
@@ -164,12 +165,11 @@ function Sell() {
               onChange={(e) =>
                 setproduct({ ...products, price: e.target.value })
               }
-            />
+            /><span>/q</span>
           </div>
 
           <p style={{ color: "#1E1E1E" }}>
-            description Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Esse eos deleniti nihil facilis quidem hic?
+            description :this is a crop
           </p>
           <button className="sell-btn" onClick={Upload}>
             Upload

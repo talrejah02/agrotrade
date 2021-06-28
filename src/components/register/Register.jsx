@@ -80,7 +80,7 @@ function Register() {
             <input type="text" />
           </div>
           <div className="">
-            <Link to="/" className="card-btn" type="button"  >Proceed</Link> <br/>
+            <Link to="/" className="card-btn" onClick={()=>alert("registered")}  >Proceed</Link> <br/>
           </div>
           {/* </div> */}
         </div>
