@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,400&display=swap');
+*{
+  font-family: 'Raleway', sans-serif;
+}
+.sell h1{
+  margin:0;
+  color: #49A760 ;
+}
+.sell-head{
+   position:absolute;
+   font-size: 3rem;
+   font-weight: 450;
+    color:rgb(255, 255, 255);
+    top: 10rem;
+    left: 40rem;
+   
+   
+}
+
+.sell-img img{
+    filter: blur(1px);
+    -webkit-filter: blur(1px); 
+    width:100%;
+}
+.sell-img{
+   
+    height:100%;
+    background-color: #f5f5f5;
+}
+.sell-left img{
+
+    height: 18rem;
+    width: 16rem;
+    border-radius: 8px;
+    
+}
+.sell-left{
+    /* background-image: url(../../Assets/Sell/alt_img.png); */
+    width:30rem;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height:18rem;
+    width:16rem;
+    background-color: #fff;
+    box-shadow: 6px 7px 8px 0px rgb(185 181 181);
+    border-radius: 7px ;
+}
+.sell-right{
+    height:60%;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#212121;    
+    margin-left: 10%;
+    background-color: #fff;
+    box-shadow: 6px 7px 8px 0px rgba(185 181 181);
+    border-radius: 7px ;
+}
+input[type=file]{
+    display: none;
+}
+.img-label{
+    background-color: rgb(111, 193, 240);
+    padding:0.5rem;
+    border-radius: 7px;
+
+}
+
+.sell-main{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70vh;
+}
+ .sell-input input{
+    background-color: #ececec;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+.sell-right p{
+    margin:0;
+}
+.sell-btn{
+   
+    margin-left: 0.2rem;
+    width: 23%;
+    height:2.5rem;
+    background-color: #E9B041;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 300;
+}
+.sell-input{
+    width:80%;
+    display: flex;
+    justify-content: space-between;   
+}
+

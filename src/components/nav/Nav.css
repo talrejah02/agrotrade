@@ -1,8 +1,9 @@
 .nav{
   display:flex;
-  background-color: #262B2B;
+  background-color: #255946;
+  /* background: linear-gradient(90deg, rgba(115,201,114,1) 61%, rgba(255,255,255,1) 100%); */
   justify-content:space-between;
-  padding: 0.7rem 8rem 0.7rem 10rem;
+  padding: 0.8rem 8rem 0.8rem 10rem;
 
 }
 .element-content{

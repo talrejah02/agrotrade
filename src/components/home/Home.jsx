@@ -1,11 +1,12 @@
 import React from "react";
-import homeimg from "../../Assets/home page/tractor.jpg";
+import homeimg from "../../Assets/home page/sun.jpg";
 import layer_one from "../../Assets/home page/layer1.jpg";
 import layer_two from "../../Assets/home page/layer2.png";
 import { HiOutlineLightBulb, HiCubeTransparent } from "react-icons/hi";
 import { GiStarsStack } from "react-icons/gi";
 import { FiTruck } from "react-icons/fi";
 import leaf from "../../Assets/home page/leaf.png";
+// import farm from "../../Assets/home page/farm.png";
 import live from "../../Assets/home page/live.jpg";
 import transport  from "../../Assets/home page/transport.jpg";
 import Offline  from "../../Assets/home page/offline.jpg";
@@ -175,6 +176,9 @@ function Home() {
           </div>
         </div>
       </div>
+      <footer>
+        
+      </footer>
     </div>
   );
 }

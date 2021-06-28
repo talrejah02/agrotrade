@@ -1,0 +1,51 @@
+.buy{
+    display:flex;
+    justify-content:center;
+    height: 93vh;
+       
+}
+.buy img{
+    /* filter: blur(2px); */
+    /* -webkit-filter: blur(2px);  */
+    opacity: 0.8;
+ width:100%;
+
+}
+
+.buy-main{
+    background-color:#262B2B;
+     border-radius:8px;
+     position: absolute;
+     top: 5rem;
+    
+    
+}
+.details{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:30rem;
+    width:25rem;
+}
+.details-input{
+    color: aliceblue;
+    display:flex;
+    justify-content: space-evenly;
+}
+.details-input input{
+    margin:0;
+}
+.details-first{
+    display:flex;
+    justify-content: space-evenly;
+    width:8rem;
+    
+}
+.details-first input{
+    font-size: 8px;
+}
+.buy-btn{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

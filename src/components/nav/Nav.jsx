@@ -9,27 +9,13 @@ function Nav() {
       </div>
       <div className="nav-links">
         <div className="nav-element">
-          <Link className="link" to="/Home">
+          <Link className="link" to="/">
             Home
           </Link>
         </div>
 
         <div className="nav-element">
-          <Link className="link" to="">Trade</Link>
-          <div className="element-content">
-            <ul className="demo">
-              <li>
-                <Link className="link" to="/Trade">
-                  Live Trade
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/Trade">
-                  Offline Trade
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <Link className="link" to="/Trade">Trade</Link>
         </div>
 
         <div className="nav-element">
@@ -39,52 +25,21 @@ function Nav() {
         </div>
 
         <div className="nav-element">
+          <Link className="link" to="/Stock">Stock</Link>
+          <div className="element-content">
+          </div>
+        </div>
+        
+        <div className="nav-element">
+          <Link className="link" to="/Order">Orders</Link>
+        </div>
+
+        <div className="nav-element">
           <Link className="link" to="Transport">
             Transport
           </Link>
         </div>
 
-        <div className="nav-element">
-          <Link className="link" to="">Orders</Link>
-          <div className="element-content">
-            <ul className="demo">
-              <li>
-                <Link className="link" to="/Orders">
-                  All orders
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/Orders">
-                  Pending
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="nav-element">
-          <Link className="link" to="">Dashboard</Link>
-          <div className="element-content">
-            <ul className="demo">
-              <li>
-               
-                <Link className="link" to="/StakeHolders">
-                  Stake holders
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/Transaction">
-                  Transaction
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/Complaints">
-                  Complaints
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
         <div className="nav-element">
         <Link className="link" to="/Login">login/register</Link>
       </div>

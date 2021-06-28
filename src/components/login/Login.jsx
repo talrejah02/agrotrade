@@ -4,6 +4,7 @@ import "./login.css";
 // import msgsvg from "../../Assets/msg"
 import {FiMail} from "react-icons/fi"
 import {RiLockPasswordLine} from "react-icons/ri"
+import { Link } from "react-router-dom";
 
 
 
@@ -16,11 +17,12 @@ function Login() {
         </div>
         <div className="right-container">
           <div className="heading">
-               <p>national live agricultural market</p>
+               <h2>national live agricultural market</h2>
           </div>
           <div className="right-btn">
-            <button  className="head-btn">login</button>
-            <button  className="head-btn">Register</button>
+            <Link to="/Register" className="register-btn" >login</Link>
+            <Link to="/Register" className="register-btn" >Register</Link>
+            {/* <button  className="head-btn">Register</button> */}
           </div>
           <div className="login-container">
             <div className="login-details">
@@ -34,8 +36,10 @@ function Login() {
                 <input type="password" placeholder="password" name="" id="" />
               </div>
             <div class="form-btn"> 
-              <button>LOGIN</button>
-              <button>forget password</button>
+            <Link to="/" className="sell-btn" >
+            Login
+          </Link>
+              <button className="sell-btn">forget password</button>
             </div>
             </div>
           </div>
