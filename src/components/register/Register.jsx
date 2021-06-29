@@ -23,9 +23,9 @@ function Register() {
                   height: "auto",
                 }}
               />
-              <span>Full name</span>
+              <span>Username</span>
             </div>
-            <input type="text" />
+            <input type="text" required />
           </div>
           <div className="details-input">
             <div className="details-first">
@@ -38,7 +38,7 @@ function Register() {
               />
               <span> Email </span>
             </div>
-            <input type="text" />
+            <input type="password" required />
           </div>
 
           <div className="details-input">

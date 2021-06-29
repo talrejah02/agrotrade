@@ -1,14 +1,29 @@
-import React from "react";
+import React,{useState} from "react";
 import work from "../../Assets/login page/work.jpg";
 import "./login.css";
 // import msgsvg from "../../Assets/msg"
 import {FiMail} from "react-icons/fi"
 import {RiLockPasswordLine} from "react-icons/ri"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
 function Login() {
+   const[email,setemail]=useState("")
+   const[pass,setpass]=useState("")
+
+   const navigate = useNavigate()
+   function valid(){
+
+     if(email === "hitesh@gmail.com" && pass === "hitesh" )
+     {
+       alert("logged in")
+       navigate('/')
+     }else{
+        alert("user does not exist")
+     }
+
+   }
   return (
     <div className="main-container">
       <div className="secondary-container">
@@ -29,16 +44,16 @@ function Login() {
               <p>Use your credentials to login into account.</p>
               <div className="input-fields">
                 <FiMail style={{ verticalAlign:'middle', width: '1.5rem' , height: 'auto' }}/>
-              <input type="text" placeholder="Username" name="" id="" />
+              <input type="text" placeholder="Username" name="" id="" onChange={(e)=>setemail(e.target.value)} />
               </div>
               <div className="input-fields">
                 <RiLockPasswordLine style={{ verticalAlign:'middle', width: '1.5rem' , height: 'auto' }}/>
-                <input type="password" placeholder="password" name="" id="" />
+                <input type="password" placeholder="password" name="" id="" onChange={(e)=>setpass(e.target.value)}  />
               </div>
             <div class="form-btn"> 
-            <Link to="/" className="sell-btn" >
+            <button to="/" className="sell-btn" onClick={()=>valid()} >
             Login
-          </Link>
+          </button>
               <button className="sell-btn">forget password</button>
             </div>
             </div>
