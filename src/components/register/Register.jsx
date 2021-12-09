@@ -14,6 +14,26 @@ function Register() {
       <img src={leave} alt="" />
       <div className="buy-main">
         <div className="details">
+
+        <div className="details-input">
+            <div className="details-first">
+              <BsFillPersonFill
+                style={{
+                  verticalAlign: "middle",
+                  width: "1.5rem",
+                  height: "auto",
+                }}
+              />
+              <span> User type </span>
+            </div>
+           <select>
+             <option>farmer</option>
+             <option>buyer</option>
+             <option>logistic</option>
+             <option>agent</option>
+           </select>
+          </div>
+
           <div className="details-input">
             <div className="details-first">
               <BsFillPersonFill
@@ -27,6 +47,7 @@ function Register() {
             </div>
             <input type="text" required />
           </div>
+         
           <div className="details-input">
             <div className="details-first">
               <FiMail
@@ -36,10 +57,12 @@ function Register() {
                   height: "auto",
                 }}
               />
-              <span> Email </span>
+              <span> password </span>
             </div>
             <input type="password" required />
           </div>
+          
+          
 
           <div className="details-input">
             <div className="details-first">

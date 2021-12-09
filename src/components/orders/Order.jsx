@@ -1,10 +1,13 @@
 import React,{ useState,useEffect} from 'react'
 import sell from "../../Assets/Sell/sell.jpg"
 import "./order.css"
-function Order() {
-    const userId="60d8e5da5a6ac20768d8c69a"
-   const[order,setorder]=useState([])
+import {useUser} from "../../context/context"
 
+function Order() {
+    
+   const[order,setorder]=useState([])
+   const {userId}=useUser()
+   
     useEffect(()=>{
         fetch(`https://national-api.hiteshtalreja.repl.co/api/order/${userId}`)
         .then((res)=> res.json())

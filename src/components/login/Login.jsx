@@ -1,28 +1,49 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import work from "../../Assets/login page/work.jpg";
 import "./login.css";
 // import msgsvg from "../../Assets/msg"
 import {FiMail} from "react-icons/fi"
 import {RiLockPasswordLine} from "react-icons/ri"
 import { Link, useNavigate } from "react-router-dom";
+import {useUser} from '../../context/context'
 
 
 
-function Login() {
+  function  Login() {
    const[email,setemail]=useState("")
    const[pass,setpass]=useState("")
-
+   const{setId,isLogin,setLogin}=useUser()
    const navigate = useNavigate()
+
+   
+
    function valid(){
-
-     if(email === "hitesh@gmail.com" && pass === "hitesh" )
-     {
-       alert("logged in")
-       navigate('/')
-     }else{
-        alert("user does not exist")
-     }
-
+       fetch("https://national-api.hiteshtalreja.repl.co/api/register")
+       .then(res=>res.json())
+       .then(data=>{
+         data.login.forEach((item)=>{
+           if(email === item.username ){
+             console.log(item.id)
+             setId(item.id)
+             setLogin(true)
+             navigate('/')
+            }
+          })
+          if(!isLogin){
+            alert("please Enter correct email and password")
+          }
+        })
+      
+        
+        
+        //  if(email === "hitesh@gmail.com" && pass === "hitesh" )
+        //  {
+          //    alert("logged in")
+          //    navigate('/')
+          //  }else{
+            //     alert("user does not exist")
+            //  }
+            
    }
   return (
     <div className="main-container">

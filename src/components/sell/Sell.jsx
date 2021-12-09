@@ -18,7 +18,6 @@ function Sell() {
   const [error, seterror] = useState(null);
   function imageUpload(e) {
     let selected = e.target.files[0];
-    console.log(selected.name);
     const storageRef = projectStorage.ref(selected.name);
     storageRef.put(selected).on(
       "state.changed",

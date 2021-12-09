@@ -1,17 +1,19 @@
 import React,{useState,useEffect} from 'react'
 import sell from "../../Assets/Sell/sell.jpg"
 import "./stock.css"
-import axios from "axios";
 import Card from "../trade/Card"
+import {useUser} from "../../context/context"
 function Stock() {
   const[product,setproducts]=useState([])
-  const userId="60d8e5c35a6ac20768d8c699"
+  const {userId}=useUser()
+ 
 
   useEffect(()=>{
-    fetch(`https://national-api.hiteshtalreja.repl.co/api/stock/${userId}`)
-    .then((res)=> res.json())
-    .then((data)=>setproducts(data.product))
-    .catch((err)=>console.log(err))
+      fetch(`https://national-api.hiteshtalreja.repl.co/api/stock/${userId}`)
+      .then((res)=> res.json())
+      .then((data)=>setproducts(data.product))
+      .catch((err)=>console.log(err))
+
   },[])
   
   
@@ -27,13 +29,17 @@ function Stock() {
       <div className="trade-container">
         <div className="card-container">
            
-          {product.map(prod =>{
 
-            
-          return  <Card prod={prod} key={prod.id} stock="true"  />
-          })
-
-          }  
+             
+             {product.map(prod =>{
+               
+               
+               return  <Card prod={prod} key={prod.id} stock="true"  />
+              })
+              
+            }  
+          
+          
            
            
         </div>
