@@ -3,9 +3,12 @@ import "./trade.css";
 import { Link } from "react-router-dom";
 import { RiDeleteBin2Line } from "react-icons/ri";
 import axios from "axios";
+import {useUser} from '../../context/context'
+
 
 function Card(props) {
   const { prod, stock } = props;
+  const {userId}=useUser()
   const [products, setproduct] = useState({
     id: prod.id,
     product: prod.product,
@@ -17,7 +20,7 @@ function Card(props) {
     status: prod.status,
   });
   const [orders, setorder] = useState({
-    userId: "60d8e5da5a6ac20768d8c69a",
+    userId: userId,
     stockId: prod.id,
     sellerId: prod.userId,
     date: "29/06/21",

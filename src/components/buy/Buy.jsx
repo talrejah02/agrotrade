@@ -6,7 +6,6 @@ import  leave from "../../Assets/Sell/cart.jpg"
 import "./buy.css";
 function Buy() {
 
-  const userId="0d8e5da5a6ac20768d8c69a"
 
   return (
     <div className="buy">

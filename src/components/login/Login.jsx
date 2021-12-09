@@ -12,24 +12,25 @@ import {useUser} from '../../context/context'
   function  Login() {
    const[email,setemail]=useState("")
    const[pass,setpass]=useState("")
-   const{setId,isLogin,setLogin}=useUser()
+   const{setId,isLogin,setLogin,setType,userType}=useUser()
    const navigate = useNavigate()
 
-   
-
-   function valid(){
+ async function valid(){
+    await setLogin(false)
        fetch("https://national-api.hiteshtalreja.repl.co/api/register")
        .then(res=>res.json())
        .then(data=>{
          data.login.forEach((item)=>{
-           if(email === item.username ){
+           if(email === item.username && pass === item.password){
+             setLogin(true)
              console.log(item.id)
              setId(item.id)
-             setLogin(true)
+             setType(item.type)
+
              navigate('/')
             }
           })
-          if(!isLogin){
+          if(isLogin === false){
             alert("please Enter correct email and password")
           }
         })
