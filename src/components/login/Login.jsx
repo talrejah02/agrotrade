@@ -21,7 +21,7 @@ import {useUser} from '../../context/context'
        .then(res=>res.json())
        .then(data=>{
          data.login.forEach((item)=>{
-           if(email === item.username && pass === item.password){
+           if((email === item.username) && (pass === item.password)){
              setLogin(true)
              console.log(item.id)
              setId(item.id)
